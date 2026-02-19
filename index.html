@@ -1,73 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trip Plan Web App</title>
-<style>
-body { font-family: Arial, sans-serif; margin: 5px; padding-bottom: 80px; background: #f9f9f9; }
-h2 { text-align:center; margin-bottom:10px; }
-table { border-collapse: collapse; width: 100%; }
-th, td { border: 1px solid #aaa; padding: 6px; text-align:left; vertical-align:top; }
-td textarea { width:100%; box-sizing:border-box; border:none; resize:vertical; font-size:14px; padding:6px; background:#fffbe6; }
-button { position:fixed; bottom:10px; left:50%; transform:translateX(-50%); width:90%; padding:14px; font-size:16px; background:#4CAF50; color:white; border:none; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.3); z-index:1000; }
-</style>
+    <meta charset="UTF-8">
+    <title>Trip Plan</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; max-width: 900px; }
+        th, td { border: 1px solid #aaa; padding: 8px 12px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        td[contenteditable="true"] { background-color: #fffbe6; }
+        button { margin-top: 20px; padding: 10px 15px; font-size: 16px; }
+    </style>
 </head>
 <body>
 
-<h2>Trip Plan - April</h2>
+<h2>Hongkong, Osaka & Tokyo Trip Plan - April</h2>
 
 <table id="tripTable">
-<thead>
-<tr>
-<th>City</th><th>Date</th><th>Things to do</th><th>Times / Tickets</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>Hongkong</td><td>2nd April</td><td><textarea>Night train and city tour</textarea></td><td><textarea></textarea></td></tr>
-<tr><td>Hongkong</td><td>3rd April</td><td><textarea>Disneyland</textarea></td><td><textarea>Tickets Booked</textarea></td></tr>
-<tr><td>Hongkong</td><td>4th April</td><td><textarea>Macau / Ladies Market</textarea></td><td><textarea></textarea></td></tr>
-<tr><td>Hongkong</td><td>5th April</td><td><textarea>Lantau Island</textarea></td><td><textarea>Book tickets for cable cars</textarea></td></tr>
-<tr><td>Osaka</td><td>6th April</td><td><textarea>Umeda Sky Building, Osaka Castle, Dotonbori, Tsutenkaku Tower</textarea></td><td><textarea></textarea></td></tr>
-<tr><td>Osaka</td><td>7th April</td><td><textarea>Kyoto / Nara</textarea></td><td><textarea>Tickets pending</textarea></td></tr>
-<tr><td>Osaka</td><td>8th April</td><td><textarea>Universal Studios</textarea></td><td><textarea>Tickets pending</textarea></td></tr>
-<tr><td>Tokyo</td><td>9th April</td><td><textarea>Shibuya Crossing, Shibuya Sky, Asakusa, Tokyo Skytree</textarea></td><td><textarea></textarea></td></tr>
-<tr><td>Tokyo</td><td>10th April</td><td><textarea>Mount Fuji</textarea></td><td><textarea></textarea></td></tr>
-<tr><td>Tokyo</td><td>11th April</td><td><textarea>Ginza, Shinjuku City</textarea></td><td><textarea></textarea></td></tr>
-<tr><td>Tokyo</td><td>12th April</td><td><textarea>Disney Sea</textarea></td><td><textarea></textarea></td></tr>
-<tr><td>Tokyo</td><td>13th April</td><td><textarea>Kidszanina</textarea></td><td><textarea>Tickets booked, morning shift</textarea></td></tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>City</th>
+            <th>Date</th>
+            <th>Things to do</th>
+            <th>Times / Tickets</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Hongkong</td>
+            <td>2nd April</td>
+            <td contenteditable="true">Night train and city tour</td>
+            <td contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>Hongkong</td>
+            <td>3rd April</td>
+            <td contenteditable="true">Disneyland</td>
+            <td contenteditable="true">Tickets Booked</td>
+        </tr>
+        <tr>
+            <td>Hongkong</td>
+            <td>4th April</td>
+            <td contenteditable="true">Macau / Ladies Market</td>
+            <td contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>Hongkong</td>
+            <td>5th April</td>
+            <td contenteditable="true">Lantau Island</td>
+            <td contenteditable="true">Book tickets for cable cars</td>
+        </tr>
+        <tr>
+            <td>Osaka</td>
+            <td>6th April</td>
+            <td contenteditable="true">City (Umeda Sky Building, Osaka Castle, Dotonbori, Tsutenkaku Tower)</td>
+            <td contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>Osaka</td>
+            <td>7th April</td>
+            <td contenteditable="true">Kyoto / Nara</td>
+            <td contenteditable="true">Tickets pending</td>
+        </tr>
+        <tr>
+            <td>Osaka</td>
+            <td>8th April</td>
+            <td contenteditable="true">Universal Studios</td>
+            <td contenteditable="true">Tickets pending</td>
+        </tr>
+        <tr>
+            <td>Tokyo</td>
+            <td>9th April</td>
+            <td contenteditable="true">Shibuya Crossing, Shibuya Sky, Asakusa, Tokyo Skytree</td>
+            <td contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>Tokyo</td>
+            <td>10th April</td>
+            <td contenteditable="true">Mount Fuji</td>
+            <td contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>Tokyo</td>
+            <td>11th April</td>
+            <td contenteditable="true">Ginza, Shinjuku City</td>
+            <td contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>Tokyo</td>
+            <td>12th April</td>
+            <td contenteditable="true">Disney Sea</td>
+            <td contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>Tokyo</td>
+            <td>13th April</td>
+            <td contenteditable="true">Kidszanina</td>
+            <td contenteditable="true">Tickets booked, morning shift</td>
+        </tr>
+    </tbody>
 </table>
 
-<button onclick="downloadHTML()">💾 Download Trip Plan</button>
+<button onclick="savePlan()">💾 Save Plan</button>
 
 <script>
-// Save edits automatically to localStorage
-const table = document.getElementById('tripTable');
-function saveTable() {
+// Function to save table HTML in localStorage
+function savePlan() {
+    const table = document.getElementById('tripTable');
     localStorage.setItem('tripPlan', table.innerHTML);
+    alert('Plan saved ✅');
 }
 
-// Load saved table from localStorage
-window.onload = () => {
-    const saved = localStorage.getItem('tripPlan');
-    if(saved) table.innerHTML = saved;
-    // Listen for edits
-    table.querySelectorAll('textarea').forEach(cell => {
-        cell.addEventListener('input', saveTable);
+// Function to load table from localStorage
+window.onload = function() {
+    const savedPlan = localStorage.getItem('tripPlan');
+    if (savedPlan) {
+        document.getElementById('tripTable').innerHTML = savedPlan;
+    }
+}
+
+// Optional: auto-save whenever a cell changes
+document.querySelectorAll('#tripTable td[contenteditable="true"]').forEach(cell => {
+    cell.addEventListener('input', () => {
+        localStorage.setItem('tripPlan', document.getElementById('tripTable').innerHTML);
     });
-}
-
-// Download edited HTML
-function downloadHTML() {
-    const htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
-    const blob = new Blob([htmlContent], {type:'text/html'});
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = 'trip_plan.html';
-    a.click();
-    alert('Trip plan downloaded! ✅');
-}
+});
 </script>
 
 </body>
